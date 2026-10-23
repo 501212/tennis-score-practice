@@ -3,8 +3,8 @@ int main(void)
 {int p1 = 0,p2 = 0;
 int input;
 int score_table[] = {0,15,30,40};
-printf("网球计分练习\n");
-printf("输入1: 选手1得分，输入2: 选手2得分\n");
+printf("Tennis score counter\n");
+printf("Press 1: Player 1 scoer,Press 2: Player 2 score\n");
 while(1)
 {
     scanf("%d",&input);
@@ -20,10 +20,10 @@ else if(input == 2)
 }
 else
 {
-    printf("请输入1或者2\n");
+    printf("Please press 1 or 2\n");
     continue;
 }
-printf("选手1: %d|选手2: %d\n",score_table[p1],score_table[p2]);
+printf("Player 1: %d|Player 2: %d\n",score_table[p1],score_table[p2]);
 }
 return 0;
 }
